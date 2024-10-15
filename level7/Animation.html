@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position: relative;
+            top: 10px;
+            left: 10px;
+
+            animation-name: mobile;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+
+         /*animation: mobile 2s ease-in-out 1s 5 alternate;*/
+        }
+
+        @keyframes mobile {
+            0% {left: 10px;}
+            50%{left: 50px, 150px;}
+            100%{left: 2000px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>
