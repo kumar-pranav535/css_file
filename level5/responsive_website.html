@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative unit percentage/em/rem</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+            font-size: 5px;
+        }
+        #first {
+            height: 150px;
+            width: 200px;
+            font-size: 10em;
+            background-color: darkred;
+        }
+        #second {
+            height: 60%;
+            width: 50%;
+            font-size: 0.5rem;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    body text
+    <div id="first">
+        first div
+        <div id="second">
+            second div
+        </div>
+    </div>
+</body>
+</html>

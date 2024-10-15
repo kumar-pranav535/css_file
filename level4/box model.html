@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-model</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        #padded {
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px 5px 5px 5px;
+            border: 12px dashed blue;
+            border-radius: 200px;
+            box-sizing: content-box;
+             background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="padded">padding checker</div>
+</body>
+</html>
