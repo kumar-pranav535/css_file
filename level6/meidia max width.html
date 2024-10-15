@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quaries</title>
+    <style>
+        #box {
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: mediumspringgreen;
+        }
+        @media screen and (min-width: 200px)and 
+        (max-width: 300px) {
+            #box {
+                background-color: brown;
+            }
+            .box {
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">media</div>
+    <div id="box" class="combo">combo</div>
+</body>
+</html>
